@@ -47,10 +47,12 @@ function App() {
 
   return (
     <>
-      <h1>Phonebook</h1>
-      <ContactForm onAdd={addContact} />
-      <SearchBox value={filter} onFilter={setFilter} />
-      <ContactList contacts={filteredContacts} onDelete={deleteContact} />
+      <main>
+        <h1>Phonebook</h1>
+        <ContactForm onAdd={addContact} />
+        <SearchBox value={filter} onFilter={setFilter} />
+        <ContactList contacts={filteredContacts} onDelete={deleteContact} />
+      </main>
     </>
   );
 }
